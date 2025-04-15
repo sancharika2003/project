@@ -4,63 +4,142 @@
  <title>Happy Journey</title>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-</body>
-</html>
+<style>
+   #slider{
+    overflow: hidden;
+   }
+   #slider figure {
+    position: relative;
+    width:200%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+   }
+   #slider figure img{
+    float: left;
+    width: 20%;
+
+   }
+   @keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200;
+    }
+    70% {
+        left: -200;
+    }
+   }
+</style>
+<style>
+    *{
+        padding: 0%;
+        margin: 0;
+
+
+    }
+    body{
+        background-color:rgb(251, 250, 250);
+    }
+</style>
 <header>
-    <div class="logo">
-     <a href="Happy journey.html">Happy Journey</a>
+    <div class="container">
+      <h1>Happy Journey</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Contact</a></li>
+          <button><a href="#">SignIn</a></button>
+          <button><a href="#">SignIn</a></button>
+        </ul>
+      </nav>
     </div>
-    <nav>
-     <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="destination.html">Destinations</a></li>
-      <li><a href="contact.html">Contact</a></li>
-     </ul>
-    </nav>
-   </header>
-   <section class="banner">
-    <div class="slider">
-     <img src="C:\Users\sanch\Downloads\seongil-park-3wGm60NhrEM-unsplash.jpg" alt="Banner 1">
-     <img src="C:\Users\sanch\Downloads\tamar-dCMvzMV1jfc-unsplash.jpg" alt="Banner 2">
-     <img src="C:\Users\sanch\Downloads\kira-auf-der-heide-8s1wfA6aB-4-unsplash.jpg" alt="Banner 3">
+  </header>
+
+   <body>
+    <div id="slider">
+        <figure>
+            <img src="C:\Users\sanch\Downloads\seongil-park-3wGm60NhrEM-unsplash.jpg">
+            <img src="C:\Users\sanch\Downloads\tamar-dCMvzMV1jfc-unsplash.jpg">
+            <img src="C:\Users\sanch\Downloads\kira-auf-der-heide-8s1wfA6aB-4-unsplash.jpg">
+            <img src="C:\Users\sanch\Downloads\bryan-brittos-kNNJAN2jpTI-unsplash.jpg">
+            <img src="C:\Users\sanch\Downloads\claudio-schwarz-d-vYj8A-JQ8-unsplash.jpg">
+        </figure>
     </div>
-   </section>
-   <section class="services">
-    <h2>Our Services</h2>
-    <div class="service">
-     <img src= "C:\Users\sanch\Downloads\ross-parmly-rf6ywHVkrlY-unsplash.jpg" alt="Service 1">
-     <h3>Flight Booking</h3>
-     <p>We are committed to providing our customers with quality air travel.</p>
-    </div>
-    <div class="service">
-    <img src="C:\Users\sanch\Downloads\sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg" alt="services 2">
-     <h3>Hotel Booking</h3>
-     <p>Take It From Us. You're In Good Hands.</p>
-    </div>
-    <div class="service">
-     <img src="C:\Users\sanch\Downloads\bing-hui-yau-y85Tir86Q34-unsplash.jpg" alt="Service 3">
-     <h3>Tour Packages</h3>
-     <p>Your passport to extraordinary experiences</p>
-    </div>
-   </section>
-   <section class="destinations">
-    <h2>popular destinations</h2>
-    <div class="destination 1"></div>
-    <img src="C:\Users\sanch\Downloads\surya-teja-oIXJ839p55k-unsplash.jpg" alt="destination 1">
-    <h3>Manali</h3>
-   </div>
-   <div class="destination 2">
-    <img src="C:\Users\sanch\Downloads\laurentiu-morariu-5VDfhYzVp1Q-unsplash.jpg" alt="destination 2">
-    <h3>Shimla</h3>
-   </div>
-   <div class="destination 3">
-    <img src="C:\Users\sanch\Downloads\piyush-bansal--vt95uG_-U4-unsplash.jpg" alt="destination 3">
-    <h3>Dharamshala</h3>
-   </div>
-   </section>
+    
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <img src="C:\Users\sanch\Downloads\ross-parmly-rf6ywHVkrlY-unsplash.jpg">
+                <div class="card-container">
+                    <h3>FLIGHT BOOKING</h3>
+                    <p>We have a simple philosophy: offer fares that are affordable, flights that are on time,
+                       and provide a courteous and hassle-free travel experience across our unparalleled network.
+                       We show that low cost does not mean low quality. With our fleet of 400+ aircraft.
+                       we provide our best services. </p>
+                            <a href=""class="btn">Read More</a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\sanch\Downloads\sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg">
+                <div class="card-container">
+                    <h3>HOTEL BOOKING</h3>
+                    <p>Find the best hotels at unbeatable prices—whether you're planning a weekend getaway,
+                       a business trip, or a dream vacation. Compare deals from top hotels worldwide,
+                       explore reviews and photos, and book instantly with our easy-to-use platform.
+                       From budget-friendly stays to luxury resorts, your perfect trip starts here.</p>
+                            <a href=""class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\sanch\Downloads\bing-hui-yau-y85Tir86Q34-unsplash.jpg">
+                <div class="card-container">
+                    <h3>TOUR BOOKING</h3>
+                    <p>Explore the World with Tailored Tour Packages
+                        Discover unforgettable travel experiences with our expertly crafted tour packages.
+                        Whether you're seeking adventure, culture, relaxation, or romance,
+                        we have something for every traveler. Choose from a wide range of destinations,
+                        enjoy curated itineraries.</p>
+                            <a href=""class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <section class="destinations">
+        <div class="container">
+          <h2>Popular Destinations</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="C:\Users\sanch\Downloads\surya-teja-oIXJ839p55k-unsplash.jpg" alt="Manali">
+              <h3>Manali</h3>
+            </div>
+            <div class="card">
+              <img src="C:\Users\sanch\Downloads\laurentiu-morariu-5VDfhYzVp1Q-unsplash.jpg" alt="Shimla">
+              <h3>shimla</h3>
+            </div>
+            <div class="card">
+              <img src="C:\Users\sanch\Downloads\piyush-bansal--vt95uG_-U4-unsplash.jpg" alt="Dharamshala">
+              <h3>Dharamshala</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    
    <footer>
     <div class="contact">
         <h4>contact us</h4>
@@ -75,182 +154,7 @@
     <p><a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></p>
     </div>   
    </footer>
-   /* Global styles */
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-    margin-top: 1;
-    }
-    
-    a {
-    color: #0077c0;
-    text-decoration: none;
-    }
-    
-    a:hover {
-    text-decoration: underline;
-    }
-    
-    /* Header styles */
-    header {
-    background-color: #0077c0;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    }
-    
-    .logo {
-    font-size: 32px;
-    font-weight: bold;
-    }
-    
-    nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-    
-    nav a {
-    color: #fff;
-    margin: 0 10px;
-    }
-    
-    nav a:hover {
-    color: #ffd700;
-    }
-    
-    /* Banner styles */
-    .banner {
-    background-image: url('img/banner.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    }
-    
-    .banner h1 {
-    color: #fff;
-    font-size: 48px;
-    margin-top: 150px;
-    text-align: center;
-    text-shadow: 2px 2px #000;
-    }
-    
-    /* Services styles */
-    .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:
-    50px 0;
-    }
-    
-    .services article {
-    background-color: #fff;
-    box-shadow: 2px 2px 5px #ccc;
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
-    }
-    
-    .services article h3 {
-    font-size: 24px;
-    margin-top: 0;
-    }
-    
-    .services article p {
-    margin-bottom: 0;
-    }
-    
-    /* About styles */
-    .about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px auto;
-    max-width: 960px;
-    padding: 0 20px;
-    }
-    
-    .about img {
-    border-radius: 50%;
-    height: 200px;
-    margin: auto;
-    }
-    
-    .about p {
-    margin-top: 20px;
-    text-align: justify;
-    }
-    
-    /* Contact styles */
-    form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px auto;
-    max-width: 960px;
-    padding: 0 20px;
-    }
-    
-    form input[type="text"], form input[type="email"], form textarea {
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px #ccc;
-    padding: 10px;
-    width: 100%;
-    }
-    
-    form input[type="submit"] {
-    background-color: #0077c0;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 20px;
-    padding: 10px 20px;
-    }
-    
-    form input[type="submit"]:hover {
-    background-color: #ffd700;
-    }
-    
-    .contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px auto;
-    max-width: 960px;
-    padding: 0 20px;
-    }
-    
-    .contact h4 {
-    margin-top: 0;
-    }
-    
-    .contact p {
-    margin-bottom: 0;
-    }
-    
-    .social-media {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    }
-    
-    .social-media a {
-    color: #0077c0;
-    font-size: 24px;
-    margin: 0 10px;
-    }
-    
-    .social-media a:hover {
-    color: #ffd700;
-    }
+   <footer>
+    <p>&copy; 2025 Explore World. All rights reserved.</p>
+  </footer>
+   
